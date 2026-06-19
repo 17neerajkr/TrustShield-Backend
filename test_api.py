@@ -1,21 +1,19 @@
 import requests
 
+API_URL = "https://trustshield-backend-production.up.railway.app"
+
 response = requests.post(
-
-    "http://127.0.0.1:5000/analyze",
-
+    f"{API_URL}/analyze",
     json={
-
-        "message":
-        "Congratulations! You have been selected. "
-        "No interview is required. "
-        "Pay ₹2500 registration fee "
-        "and send Aadhaar Card via WhatsApp."
-
+        "message": (
+            "Congratulations! You have been selected. "
+            "No interview is required. "
+            "Pay ₹2500 registration fee "
+            "and send Aadhaar Card via WhatsApp."
+        )
     }
-
 )
 
-print(response.status_code)
-
+print("Status Code:", response.status_code)
+print("Response:")
 print(response.json())

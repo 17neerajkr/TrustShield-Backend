@@ -46,7 +46,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold text-sm mb-4">Built With</h4>
             <ul className="space-y-2">
-              {['React.js', 'Tailwind CSS', 'Machine Learning', 'OCR Technology', 'Flask API (Soon)'].map(tech => (
+              {['React.js', 'Tailwind CSS', 'Machine Learning', 'OCR Technology', 'SQL','LLM-Powered Analysis (Soon)' ].map(tech => (
                 <li key={tech} className="text-slate-400 text-sm">{tech}</li>
               ))}
             </ul>
@@ -55,7 +55,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © 2025 TrustShield AI. Final Year Project & Hackathon Showcase.
+            © 2025 TrustShield AI.
           </p>
           <p className="text-slate-500 text-sm flex items-center gap-1.5">
             Built with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400" /> for safer digital communications
