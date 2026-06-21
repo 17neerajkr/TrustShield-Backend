@@ -13,12 +13,13 @@ app = Flask(__name__)
 
 # Allow React frontend to access Flask API
 CORS(app)
-reader = easyocr.Reader(['en'], gpu=False)
 
 @app.route("/analyze-image", methods=["POST"])
 def analyze_image():
 
     try:
+        # Load OCR only when needed
+        reader = easyocr.Reader(['en'], gpu=False)
 
         if "image" not in request.files:
 
