@@ -280,7 +280,9 @@ model = LogisticRegression(
     max_iter=1000,
     random_state=42,
     multi_class='auto',
+    # solver='lbs'
     solver='lbfgs'
+
 )
 
 model.fit(

@@ -1,7 +1,8 @@
 import requests
 
-API_URL = "https://trustshield-backend-production.up.railway.app"
+# API_URL = "https://trustshield-backend-production.up.railway.app"
 
+API_URL = "http://127.0.0.1:5000"
 response = requests.post(
     f"{API_URL}/analyze",
     json={
